@@ -1,0 +1,20 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[branch "master"]
+	metaData = {appId:315e219a-8707-486b-845c-270579435708,serverId:4,streamId:4fb35a2d-e318-47a8-86ea-1940f5d8c2c6,parentBranchName:null,userId:1}
+[user]
+	email = admin@senseops.com
+	name = rajasekarv
+[branch "dw"]
+	metaData = {appId:f4ac70cf-84a7-4c9e-baba-b297431280c9,serverId:4,streamId:4fb35a2d-e318-47a8-86ea-1940f5d8c2c6,parentBranchName:master,userId:1}
+[branch "sd"]
+	metaData = {appId:09080a13-3e8d-40bb-9a29-75c97f28f32f,serverId:4,streamId:4fb35a2d-e318-47a8-86ea-1940f5d8c2c6,parentBranchName:master,userId:1}
+[branch "cs"]
+	metaData = {appId:e22b5e82-911a-426f-8a53-b0c744af7055,serverId:4,streamId:4fb35a2d-e318-47a8-86ea-1940f5d8c2c6,parentBranchName:master,userId:1}
+[branch "gdw"]
+	metaData = {appId:d4722410-78c0-4a37-abaf-dca35bf80399,serverId:4,streamId:4fb35a2d-e318-47a8-86ea-1940f5d8c2c6,parentBranchName:master,userId:1}
