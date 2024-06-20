@@ -1,0 +1,282 @@
+<div class="content" ng-controller="mainCtrl">
+  <div class="kpiTooltip" ng-show="showModal">
+    <div class="kpiTooltip-content">
+      <p>KPI's to know more about Stats</p>
+    </div>
+  </div>
+
+  <div class="overviewFiltersWrapper">
+    <div class="filterContainer" ng-style="{'height': filterContainerHeight}">
+      <div class="filterWrapper" id="filter1">
+        <p class="filterTitle">Analysis Period:</p>
+        <div class="filter">
+          <i class="fa-solid fa-filter"></i>
+        </div>
+      </div>
+      <div class="filterWrapper" id="filter2">
+        <p class="filterTitle">Platform</p>
+        <div class="filter">
+          <i class="fa-solid fa-filter"></i>
+        </div>
+      </div>
+      <div class="filterWrapper" id="filter3">
+        <p class="filterTitle">Device Model</p>
+        <div class="filter">
+          <i class="fa-solid fa-filter"></i>
+        </div>
+      </div>
+      <div class="filterWrapper" id="filter4">
+        <p class="filterTitle">Country</p>
+        <div class="filter">
+          <i class="fa-solid fa-filter"></i>
+        </div>
+      </div>
+      <div class="filterWrapper" id="filter5">
+        <p class="filterTitle">Year</p>
+        <div class="filter"><i class="fa-solid fa-filter"></i></div>
+      </div>
+      <div class="filterWrapper" id="filter6">
+        <p class="filterTitle">Month</p>
+        <div class="filter"><i class="fa-solid fa-filter"></i></div>
+      </div>
+      <div class="filterWrapper" id="filter7">
+        <p class="filterTitle">Week</p>
+        <div class="filter"><i class="fa-solid fa-filter"></i></div>
+      </div>
+    </div>
+
+    <button
+      class="filterBtn"
+      ng-click="expandFilters()"
+      ng-hide="showLessFilters"
+    >
+      More Filters
+      <i class="fa-solid fa-caret-down"></i>
+    </button>
+    <button
+      class="filterBtn"
+      ng-click="collapseFilters()"
+      ng-hide="showMoreFilters"
+    >
+      Less Filters
+      <i class="fa-solid fa-caret-up"></i>
+    </button>
+  </div>
+  <hr />
+
+  <div class="cardContainer">
+    <div class="customizeCardBtn" ng-click="toggleCard()">
+      Customize Cards <i class="fa-solid fa-gear" style="padding-left: 10px"></i>
+    </div>
+  </div>
+  
+  <div class="customizeCard" ng-show="card.isOpen" qva-outside="onOutSideClick()">
+    <div class="cardHeader">
+      <h6 class="cardTitle">
+        Customize Cards <i class="fa-solid fa-xmark" ng-click="toggleCard()"></i>
+      </h6>
+    </div>
+    <div class="cardBody">
+      Choose any 5 options
+      <div class="kpiOptions">
+        <div class="kpiOption" ng-repeat="kpi in card.kpis">
+          {{kpi.kpiNo}}.
+          <div class="kpiName">
+            <div>{{kpi.kpiName}}</div><i class="fa-solid fa-angle-down"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cardFooter">
+      <button class="cancelBtn" ng-click="toggleCard()">CANCEL</button>
+      <button class="applyBtn" ng-click="toggleCard()">APPLY</button>
+    </div>
+  </div>
+  
+  
+
+  <div class="kpiContainer">
+    <div class="kpiPan">
+      <div class="kpiTitle">
+        <small title="Viewership Hours">Viewership Hours</small>
+        <i
+          class="fa-solid fa-circle-info me-2 infobtn"
+          ng-mouseover="showTooltip($event)" ng-mouseleave="hideTooltip()"
+        ></i>
+      </div>
+      <div class="kpiObject" id="kpi1">347</div>
+      <div class="kpiFooter">
+        <small class="kpiDetail">
+          <i class="fa-solid fa-caret-up up-icon"></i>
+        </small>
+        <p class="kpiValue">172 Variance</p>
+      </div>
+    </div>
+    <div class="kpiPan">
+      <div class="kpiTitle">
+        <small title="Average Session Duration">Average Session Duration</small>
+        <i
+          class="fa-solid fa-circle-info me-2 infobtn"
+          ng-mouseover="showTooltip($event)" ng-mouseleave="hideTooltip()"
+        ></i>
+      </div>
+      <div class="kpiObject" id="kpi2">11.5M</div>
+      <div class="kpiFooter">
+        <small class="kpiDetail">
+          <i class="fa-solid fa-caret-down down-icon"></i>
+        </small>
+        <p class="kpiValue">-120 Variance</p>
+      </div>
+    </div>
+    <div class="kpiPan">
+      <div class="kpiTitle">
+        <small title="Total Unique Viewers">Total Unique Viewers</small>
+        <i
+          class="fa-solid fa-circle-info me-2 infobtn"
+          ng-mouseover="showTooltip($event)" ng-mouseleave="hideTooltip()"
+        ></i>
+      </div>
+      <div class="kpiObject" id="kpi3">10.3M</div>
+      <div class="kpiFooter">
+        <small class="kpiDetail">
+          <i class="fa-solid fa-caret-up up-icon"></i>
+        </small>
+        <p class="kpiValue">22 Variance</p>
+      </div>
+    </div>
+    <div class="kpiPan">
+      <div class="kpiTitle">
+        <small title="Average Concurrent Viewers">Average Concurrent Viewers</small>
+        <i
+          class="fa-solid fa-circle-info me-2 infobtn"
+          ng-mouseover="showTooltip($event)" ng-mouseleave="hideTooltip()"
+        ></i>
+      </div>
+      <div class="kpiObject" id="kpi4">845</div>
+      <div class="kpiFooter">
+        <small class="kpiDetail">
+          <i class="fa-solid fa-caret-up up-icon"></i>
+        </small>
+        <p class="kpiValue">8 Variance</p>
+      </div>
+    </div>
+    <div class="kpiPan">
+      <div class="kpiTitle">
+        <small title="Total Ad Impressions">Total Ad Impressions</small>
+        <i
+          class="fa-solid fa-circle-info me-2 infobtn"
+          ng-mouseover="showTooltip($event)" ng-mouseleave="hideTooltip()"
+        ></i>
+      </div>
+      <div class="kpiObject" id="kpi5">1.5k</div>
+      <div class="kpiFooter">
+        <p class="kpiValue">--</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="chartWrapper overviewchart1">
+    <div class="chartHeader">
+      <p style="margin-bottom: 0">Viewership Hours</p>
+      <div class="chartContainer">
+        <div class="filterWrapper" id="chart1Compare">
+          <p class="filterTitle">Compare 'Last 7 days' with:</p>
+          <div  class="filter"></div>
+        </div>
+        <div class="filterWrapper" id="chart2View">
+          <p class="filterTitle">View:</p>
+          <div class="filter"></div>
+        </div>
+        <button
+          type="button"
+          class="btn downloadChart"
+          style="margin-right: 15px"
+        >
+          <i class="fa-solid fa-download"></i>
+        </button>
+        <div class="btn-group d-flex">
+          <button type="button" class="btn vis1TableView">
+            <i class="fa-solid fa-table-columns"></i>
+          </button>
+          <button type="button" class="btn active vis1ChartView">
+            <i class="fa-solid fa-chart-line"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="chartBody">
+      <div id="chart1" class="chart"></div>
+    </div>
+  </div>
+
+  <div class="chartWrapper overviewchart2">
+    <div class="chartHeader">
+      <p style="margin-bottom: 0">TOP PERFORMING</p>
+      <div class="chartContainer">
+        <div class="filterWrapper" id="chart2Compare">
+          <p class="filterTitle">Compare 'Last 7 days' with:</p>
+          <div class="filter"></div>
+        </div>
+        <div class="filterWrapper" id="chart2Metric">
+          <p class="filterTitle">Metric:</p>
+          <div class="filter"></div>
+        </div>
+        <button
+          type="button"
+          class="btn downloadChart"
+          style="margin-right: 15px"
+        >
+          <i class="fa-solid fa-download"></i>
+        </button>
+        <div class="btn-group d-flex">
+          <button type="button" class="btn vis2TableView">
+            <i class="fa-solid fa-table-columns"></i>
+          </button>
+          <button type="button" class="btn active vis2ChartView">
+            <i class="fa-solid fa-chart-line"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="chartSubHeader">
+      <button
+        ng-class="{ 'active': activetab === 1 }"
+        ng-click="ActiveTab(1)"
+        class="chartSubFilter"
+      >
+        Country
+      </button>
+      <button
+        ng-class="{ 'active': activetab === 2 }"
+        ng-click="ActiveTab(2)"
+        class="chartSubFilter"
+      >
+        Platform
+      </button>
+      <button
+        ng-class="{ 'active': activetab === 3 }"
+        ng-click="ActiveTab(3)"
+        class="chartSubFilter"
+      >
+        Device model
+      </button>
+      <button
+        ng-class="{ 'active': activetab === 4 }"
+        ng-click="ActiveTab(4)"
+        class="chartSubFilter"
+      >
+        App Group ID
+      </button>
+      <button
+        ng-class="{ 'active': activetab === 5 }"
+        ng-click="ActiveTab(5)"
+        class="chartSubFilter"
+      >
+        Gender
+      </button>
+    </div>
+    <div class="chartBody">
+      <div id="chart2" class="chart"></div>
+    </div>
+  </div>
+</div>

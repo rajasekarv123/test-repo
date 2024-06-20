@@ -1,0 +1,633 @@
+<div id="dashboardFilterBar" class="filterBar">
+  <div id="dashboardFilterSection" class="filterSection">
+    <div id="dashboardRadioInputs" class="emptyradioInput">
+      <div id="radioSelect1" class="emptyradioInput">
+        <!-- <input id="dashboardYear2023" type="radio" name="dashboardYear" /> -->
+        <div id="dashboardYear2023"></div>
+        <!-- <label for="dashboardYear2023">2023</label> -->
+      </div>
+      <div id="radioSelect2" class="emptyradioInput">
+        <!-- <input id="dashboardYear2022" type="radio" name="dashboardYear" checked="true" /> -->
+        <div id="dashboardYear2022"></div>
+        <!-- <label for="dashboardYear2022">2022</label> -->
+      </div>
+    </div>
+    <div id="dashboardFilterContainer" class="emptyfilterDropdown">
+      <div id="dashboardFilter1" class="emptyselectFilter">
+        <!-- Country&nbsp;<i class="fa-solid fa-angle-down"></i> -->
+      </div>
+      <div id="dashboardFilter2" class="emptyselectFilter">
+        <!-- Categories&nbsp;<i class="fa-solid fa-angle-down"></i> -->
+      </div>
+    </div>
+    <!-- <div id="dashboardRadioInputs" class="radioInput">
+      <div id="radioSelect1" class="radioInput">
+        <input id="dashboardYear2023" type="radio" name="dashboardYear" /><label
+          for="dashboardYear2023"
+          >2023</label
+        >
+      </div>
+      <div id="radioSelect2" class="radioInput">
+        <input
+          id="dashboardYear2022"
+          type="radio"
+          name="dashboardYear"
+          checked="true"
+        /><label for="dashboardYear2022">2022</label>
+      </div>
+    </div>
+    <div id="dashboardFilterContainer" class="filterDropdown">
+      <div id="dashboardFilter1" class="selectFilter">
+        Country&nbsp;<i class="fa-solid fa-angle-down"></i>
+      </div>
+      <div id="dashboardFilter2" class="selectFilter">
+        Categories&nbsp;<i class="fa-solid fa-angle-down"></i>
+      </div>
+    </div> -->
+  </div>
+  <div id="dashboardClearFilter" class="clearFilters">
+    <button type="button">Clear Filters</button>
+  </div>
+</div>
+<div id="dashboard" class="dashboardBody">
+  <div class="dashboardBodyLeft">
+    <div id="dashboardKPI1" class="kpi-card">
+      <div id="dashboardKpiTop1" class="kpiTop">
+        <div id="dashboardKpiTopLeft1" class="kpiTopLeft">
+          <div id="dashboardKpiTitle1" class="kpiTitle">Sales</div>
+          <div id="dashboardKpiValue1" class="kpiValue">-</div>
+          <!-- <div id="dashboardKpiValue1" class="kpiValue">247%</div> -->
+          <div id="dashboardKpiInfo1" class="kpiInfo">
+            <div id="dashboardKpiInfoValue1" class="infoValue positive">
+              20%<i class="fa-solid fa-arrow-up"></i>
+            </div>
+            <div id="dashboardKpiInfoText1" class="infoText">
+              From Prev. Period
+            </div>
+          </div>
+        </div>
+        <div id="dashboardKpiTopRight1" class="kpiTopRight">
+          <div id="dashboardKpiTopRightIcon1">
+            <!-- <span class="triColon">&#8285;Comment it</span> -->
+          </div>
+        </div>
+      </div>
+      <div id="dashboardKpiChart1" class="kpiChart">
+        <!-- <img src="./images/kpiChart1.svg" alt="kpiChart1"> -->
+      </div>
+    </div>
+    <div id="dashboardKPI2" class="kpi-card">
+      <div id="dashboardKpiTop2" class="kpiTop">
+        <div id="dashboardKpiTopLeft2" class="kpiTopLeft">
+          <div id="dashboardKpiTitle2" class="kpiTitle">Margin</div>
+          <div id="dashboardKpiValue2" class="kpiValue">-</div>
+          <!-- <div id="dashboardKpiValue2" class="kpiValue">43%</div> -->
+          <div id="dashboardKpiInfo2" class="kpiInfo">
+            <div id="dashboardKpiInfoValue2" class="infoValue negative">
+              10%<i class="fa-solid fa-arrow-down"></i>
+            </div>
+            <div id="dashboardKpiInfoText2" class="infoText">
+              From Prev. Period
+            </div>
+          </div>
+        </div>
+        <div id="dashboardKpiTopRight2" class="kpiTopRight">
+          <div id="dashboardKPITopRightIcon2">
+            <!-- <span class="triColon">&#8285; Comment it</span> -->
+          </div>
+        </div>
+      </div>
+      <div id="dashboardKpiChart2" class="kpiChart">
+        <!-- <img src="./images/kpiChart2.svg" alt="kpiChart2" /> -->
+      </div>
+    </div>
+    <div id="dashboardKPI3" class="kpi-card">
+      <div id="dashboardKpiTop3" class="kpiTop">
+        <div id="dashboardKpiTopLeft3" class="kpiTopLeft">
+          <div id="dashboardKpiTitle3" class="kpiTitle">Target Achieved</div>
+          <div id="dashboardKpiValue3" class="kpiValue">-</div>
+          <!-- <div id="dashboardKpiValue3" class="kpiValue">76%</div> -->
+          <div id="dashboardKpiInfo3" class="kpiInfo">
+            <div id="dashboardKpiInfoValue3" class="infoValue positive">
+              30%<i class="fa-solid fa-arrow-up"></i>
+            </div>
+            <div id="dashboardKpiInfoText3" class="infoText">
+              From Prev. Period
+            </div>
+          </div>
+        </div>
+        <div id="dashboardKpiTopRight3" class="kpiTopRight">
+          <div id="dashboardKpiTopRightIcon3">
+            <!-- <span class="triColon">&#8285;Comment it</span> -->
+          </div>
+        </div>
+      </div>
+      <div id="dashboardKpiChart3" class="kpiChart">
+        <!-- <img src="./images/kpiChart3.svg" alt="kpiChart3" /> -->
+      </div>
+    </div>
+    <div id="dashboardChart" class="dashboardChart">
+      <div id="dashboardChartTop" class="chartTop">
+        <div id="dashboardChartTopLeft" class="chartTopLeft">
+          <div id="dashboardChartTitle" class="chartTitle">Sales By Region</div>
+          <div id="dashboardChartValue" class="chartValue">-</div>
+          <!-- <div id="dashboardChartValue" class="chartValue">$180M</div> -->
+          <div id="dashboardChartInfo" class="chartInfo">
+            <div id="dashboardChartInfoValue" class="infoValue positive">
+              45%<i class="fa-solid fa-arrow-up"></i>
+            </div>
+            <div id="dashboardChartInfoText" class="infoText">
+              From Prev. Period
+            </div>
+          </div>
+        </div>
+        <div id="dashboardChartTopRight" class="chartTopRight">
+          <div id="dashboardChartTopRightIcon">
+            <span
+              class="triColon"
+              ng-click="toggleExport($event,'dashboardChart')"
+              >&#8285;</span
+            >
+          </div>
+        </div>
+      </div>
+      <div id="dashboardChartBottom" class="chartBottom">
+        <!-- <img src="./images/Chart4.svg" alt="Chart4" /> -->
+      </div>
+    </div>
+  </div>
+  <div class="dashboardBodyRight">
+    <div id="dashboardMediumKPI1" class="medium-kpi">
+      <div id="dashboardMediumKpiTop1" class="mediumKpiTop">
+        <div id="dashboardMediumKpiTopLeft1" class="mediumKpiTopLeft">
+          <div id="dashboardMediumKpiTitle1" class="chartTitle">
+            Top Performing
+          </div>
+        </div>
+        <div id="dashboardMediumKpiTopRight1" class="mediumKpiTopRight">
+          <div id="dashboardMediumKpiIcon1">
+            <span
+              class="triColon"
+              ng-click="toggleExport($event,'dashboardMediumKpi1')"
+              >&#8285;</span
+            >
+          </div>
+        </div>
+      </div>
+      <div id="dashboardMediumKpiTab1" class="mediumKpiTabs one">
+        <div
+          id="dashboardMediumKpiTab1Items1"
+          class="tabItems"
+          ng-class="{active: (activeMediumKPITab1 == 'Salesperson')}"
+          ng-click="setMediumKPIActiveTab1('Salesperson')"
+        >
+          Salesperson
+        </div>
+        <div
+          id="dashboardMediumKpiTab1Items2"
+          class="tabItems"
+          ng-class="{active: (activeMediumKPITab1 == 'Category')}"
+          ng-click="setMediumKPIActiveTab1('Category')"
+        >
+          Category
+        </div>
+        <div
+          id="dashboardMediumKpiTab1Items3"
+          class="tabItems"
+          ng-class="{active: (activeMediumKPITab1 == 'City')}"
+          ng-click="setMediumKPIActiveTab1('City')"
+        >
+          City
+        </div>
+      </div>
+      <div
+        id="dashboardMediumKpiContent1"
+        class="mediumKpiContent presentedData active"
+      >
+        <div class="MediumKpiContent1ChildContainer">
+          <div id="dashboardMediumKpiContent1Item1" class="presentedDataItem">
+            <div id="dashboardMediumKpiContentUserInfo1" class="userpic">
+              <img src="./images/userpic1.svg" alt="userpic1" />
+              <div
+                id="dashboardMediumKpiContentUserInfoText1"
+                class="name_Position"
+              >
+                <div id="dashboardMediumKpiContentUserName1" class="name">
+                  John Alex
+                </div>
+                <div
+                  id="dashboardMediumKpiContentUserPosition1"
+                  class="position"
+                >
+                  Sales Manager - West
+                </div>
+              </div>
+            </div>
+            <div
+              id="dashboardMediumKpiContentUserProgressTracker1"
+              class="progressTracker"
+            >
+              <div id="dashboardMediumKpiContentUserProgress1" class="progress">
+                <div
+                  id="dashboardMediumKpiContentUserProgressInfoValueWidth1"
+                  class="fixedWidthforValue"
+                >
+                  <div
+                    id="dashboardMediumKpiContentUserProgressInfoValue1"
+                    class="infoValue positive"
+                  >
+                    70%<i class="fa-solid fa-arrow-up"></i>
+                  </div>
+                </div>
+                <div
+                  id="dashboardMediumKpiContentUserProgressInfoText1"
+                  class="infoText"
+                >
+                  From Prev. Period
+                </div>
+              </div>
+              <!-- <div
+                id="dashboardMediumKpiContentUserProgressBarContainer1"
+                class="progressBar positive"
+              >
+                <div
+                  id="dashboardMediumKpiContentUserProgressBarAchieved1"
+                  class="achieved positive"
+                  style="width: 70%"
+                ></div>
+              </div> -->
+            </div>
+          </div>
+          <div id="dashboardMediumKpiContent1Item2" class="presentedDataItem">
+            <div id="dashboardMediumKpiContentUserInfo2" class="userpic">
+              <img src="./images/userpic2.svg" alt="userpic2" />
+              <div
+                id="dashboardMediumKpiContentUserInfoText2"
+                class="name_Position"
+              >
+                <div id="dashboardMediumKpiContentUserName2" class="name">
+                  Cecilia
+                </div>
+                <div
+                  id="dashboardMediumKpiContentUserPosition2"
+                  class="position"
+                >
+                  Account Director
+                </div>
+              </div>
+            </div>
+            <div
+              id="dashboardMediumKpiContentUserProgressTracker2"
+              class="progressTracker"
+            >
+              <div id="dashboardMediumKpiContentUserProgress2" class="progress">
+                <div
+                  id="dashboardMediumKpiContentUserProgressInfoValueWidth2"
+                  class="fixedWidthforValue"
+                >
+                  <div
+                    id="dashboardMediumKpiContentUserProgressInfoValue2"
+                    class="infoValue positive"
+                  >
+                    90%<i class="fa-solid fa-arrow-up"></i>
+                  </div>
+                </div>
+
+                <div
+                  id="dashboardMediumKpiContentUserProgressInfoText2"
+                  class="infoText"
+                >
+                  From Prev. Period
+                </div>
+              </div>
+              <!-- <div
+                id="dashboardMediumKpiContentUserProgressBarContainer2"
+                class="progressBar positive"
+              >
+                <div
+                  id="dashboardMediumKpiContentUserProgressBarAchieved2"
+                  class="achieved positive"
+                  style="width: 90%"
+                ></div>
+              </div> -->
+            </div>
+          </div>
+          <div id="dashboardMediumKpiContent1Item3" class="presentedDataItem">
+            <div id="dashboardMediumKpiContentUserInfo3" class="userpic">
+              <img src="./images/userpic3.svg" alt="userpic3" />
+              <div
+                id="dashboardMediumKpiContentUserInfoText3"
+                class="name_Position"
+              >
+                <div id="dashboardMediumKpiContentUserName3" class="name">
+                  Brendan Emmett
+                </div>
+                <div
+                  id="dashboardMediumKpiContentUserPosition3"
+                  class="position"
+                >
+                  Regional Sales Head
+                </div>
+              </div>
+            </div>
+            <div
+              id="dashboardMediumKpiContentUserProgressTracker3"
+              class="progressTracker"
+            >
+              <div id="dashboardMediumKpiContentUserProgress3" class="progress">
+                <div
+                  id="dashboardMediumKpiContentUserProgressInfoValueWidth3"
+                  class="fixedWidthforValue"
+                >
+                  <div
+                    id="dashboardMediumKpiContentUserProgressInfoValue3"
+                    class="infoValue negative"
+                  >
+                    15%<i class="fa-solid fa-arrow-down"></i>
+                  </div>
+                </div>
+
+                <div
+                  id="dashboardMediumKpiContentUserProgressInfoText3"
+                  class="infoText"
+                >
+                  From Prev. Period
+                </div>
+              </div>
+              <!-- <div
+                id="dashboardMediumKpiContentUserProgressBarContainer3"
+                class="progressBar negative"
+              >
+                <div
+                  id="dashboardMediumKpiContentUserProgressBarAchieved3"
+                  class="achieved negative"
+                  style="width: 15%"
+                ></div>
+              </div> -->
+            </div>
+          </div>
+          <div id="dashboardMediumKpiContent1Item4" class="presentedDataItem">
+            <div id="dashboardMediumKpiContentUserInfo4" class="userpic">
+              <img src="./images/userpic4.svg" alt="userpic4" />
+              <div
+                id="dashboardMediumKpiContentUserInfoText4"
+                class="name_Position"
+              >
+                <div id="dashboardMediumKpiContentUserName4" class="name">
+                  Mac Alex
+                </div>
+                <div
+                  id="dashboardMediumKpiContentUserPosition3"
+                  class="position"
+                >
+                  Sales Representative
+                </div>
+              </div>
+            </div>
+            <div
+              id="dashboardMediumKpiContentUserProgressTracker4"
+              class="progressTracker"
+            >
+              <div id="dashboardMediumKpiContentUserProgress4" class="progress">
+                <div
+                  id="dashboardMediumKpiContentUserProgressInfoValueWidth4"
+                  class="fixedWidthforValue"
+                >
+                  <div
+                    id="dashboardMediumKpiContentUserProgressInfoValue4"
+                    class="infoValue positive"
+                  >
+                    50%<i class="fa-solid fa-arrow-up"></i>
+                  </div>
+                </div>
+
+                <div
+                  id="dashboardMediumKpiContentUserProgressInfoText4"
+                  class="infoText"
+                >
+                  From Prev. Period
+                </div>
+              </div>
+              <!-- <div
+                id="dashboardMediumKpiContentUserProgressBarContainer4"
+                class="progressBar positive"
+              >
+                <div
+                  id="dashboardMediumKpiContentUserProgressBarAchieved4"
+                  class="achieved positive"
+                  style="width: 50%"
+                ></div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="dashboardMediumKPI2" class="medium-kpi">
+      <div id="dashboardMediumKpiTop2" class="mediumKpiTop">
+        <div id="dashboardMediumKpiTopLeft2" class="mediumKpiTopLeft">
+          <div id="dashboardMediumKpiTitle2" class="chartTitle">
+            Sales Contribution
+          </div>
+        </div>
+        <div id="dashboardMediumKpiTopRight2" class="mediumKpiTopRight">
+          <div id="dashboardMediumKpiIcon2">
+            <span
+              class="triColon"
+              ng-click="toggleExport($event,'dashboardMediumKpi2')"
+              >&#8285;</span
+            >
+          </div>
+        </div>
+      </div>
+      <div id="dashboardMediumKpiTab2" class="mediumKpiTabs two">
+        <div
+          id="dashboardMediumKpiTab2Items1"
+          class="tabItems"
+          ng-class="{active: (activeMediumKPITab2 == 'Country')}"
+          ng-click="setMediumKPIActiveTab2('Country')"
+        >
+          Country
+        </div>
+        <div
+          id="dashboardMediumKpiTab2Items2"
+          class="tabItems"
+          ng-class="{active: (activeMediumKPITab2 == 'Category')}"
+          ng-click="setMediumKPIActiveTab2('Category')"
+        >
+          Category
+        </div>
+        <div
+          id="dashboardMediumKpiTab2Items3"
+          class="tabItems"
+          ng-class="{active: (activeMediumKPITab2 == 'Salesperson')}"
+          ng-click="setMediumKPIActiveTab2('Salesperson')"
+        >
+          Salesperson
+        </div>
+      </div>
+      <div id="dashboardMediumKpiContent2" class="mediumKpiContent active">
+        <div id="dashboardMediumKpiChart" class="pieChart">
+          <!-- <img src="./images/sidelineimg2.svg" alt="pieChart" /> -->
+        </div>
+        <div id="dashboardMediumKpiChartInfo" class="salesContribution">
+          <div
+            id="dashboardMediumKpiChartInfoItem1"
+            class="salesContributionItem"
+          >
+            <div
+              id="dashboardMediumKpiChartInfoItemTitle1"
+              class="salesContributionItemTop"
+            >
+              <i class="fa-solid fa-circle" style="color: #0076fe"></i>USA
+            </div>
+            <div class="salesContributionItemBottom">
+              <div
+                id="dashboardMediumKpiContentInfoItemProgress1"
+                class="progress"
+              >
+                <div
+                  id="dashboardMediumKpiContentInfoItemValueWidth1"
+                  class="fixedWidthforValue"
+                >
+                  <div
+                    id="dashboardMediumKpiContentInfoItemValue1"
+                    class="infoValue positive"
+                  >
+                    20%<i class="fa-solid fa-arrow-up"></i>
+                  </div>
+                </div>
+
+                <div class="infoText">From Prev. Period</div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="dashboardMediumKpiChartInfoItem2"
+            class="salesContributionItem"
+          >
+            <div
+              id="dashboardMediumKpiChartInfoItemTitle2"
+              class="salesContributionItemTop"
+            >
+              <i class="fa-solid fa-circle" style="color: #3391fe"></i>UK
+            </div>
+            <div class="salesContributionItemBottom">
+              <div
+                id="dashboardMediumKpiContentInfoItemProgress2"
+                class="progress"
+              >
+                <div
+                  id="dashboardMediumKpiContentInfoItemValueWidth2"
+                  class="fixedWidthforValue"
+                >
+                  <div
+                    id="dashboardMediumKpiContentInfoItemValue2"
+                    class="infoValue positive"
+                  >
+                    36%<i class="fa-solid fa-arrow-up"></i>
+                  </div>
+                </div>
+
+                <div class="infoText">From Prev. Period</div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="dashboardMediumKpiChartInfoItem3"
+            class="salesContributionItem"
+          >
+            <div
+              id="dashboardMediumKpiChartInfoItemTitle3"
+              class="salesContributionItemTop"
+            >
+              <i class="fa-solid fa-circle" style="color: #66adfe"></i>Germany
+            </div>
+            <div class="salesContributionItemBottom">
+              <div
+                id="dashboardMediumKpiContentInfoItemProgress3"
+                class="progress"
+              >
+                <div
+                  id="dashboardMediumKpiContentInfoItemValueWidth3"
+                  class="fixedWidthforValue"
+                >
+                  <div
+                    id="dashboardMediumKpiContentInfoItemValue3"
+                    class="infoValue positive"
+                  >
+                    12%<i class="fa-solid fa-arrow-up"></i>
+                  </div>
+                </div>
+
+                <div class="infoText">From Prev. Period</div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="dashboardMediumKpiChartInfoItem4"
+            class="salesContributionItem"
+          >
+            <div
+              id="dashboardMediumKpiChartInfoItemTitle4"
+              class="salesContributionItemTop"
+            >
+              <i class="fa-solid fa-circle" style="color: #b2d6ff"></i>Portugal
+            </div>
+            <div class="salesContributionItemBottom">
+              <div
+                id="dashboardMediumKpiContentInfoItemProgress4"
+                class="progress"
+              >
+                <div
+                  id="dashboardMediumKpiContentInfoItemValueWidth4"
+                  class="fixedWidthforValue"
+                >
+                  <div
+                    id="dashboardMediumKpiContentInfoItemValue4"
+                    class="infoValue positive"
+                  >
+                    10%<i class="fa-solid fa-arrow-up"></i>
+                  </div>
+                </div>
+
+                <div class="infoText">From Prev. Period</div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="dashboardMediumKpiChartInfoItem5"
+            class="salesContributionItem"
+          >
+            <div
+              id="dashboardMediumKpiChartInfoItemTitle5"
+              class="salesContributionItemTop"
+            >
+              <i class="fa-solid fa-circle" style="color: #fca8a8"></i>Greece
+            </div>
+            <div class="salesContributionItemBottom">
+              <div
+                id="dashboardMediumKpiContentInfoItemProgress5"
+                class="progress"
+              >
+                <div
+                  id="dashboardMediumKpiContentInfoItemValueWidth5"
+                  class="fixedWidthforValue"
+                >
+                  <div
+                    id="dashboardMediumKpiContentInfoItemValue5"
+                    class="infoValue negative"
+                  >
+                    8%<i class="fa-solid fa-arrow-down"></i>
+                  </div>
+                </div>
+
+                <div class="infoText">From Prev. Period</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
