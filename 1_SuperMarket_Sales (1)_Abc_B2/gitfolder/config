@@ -12,3 +12,5 @@
 	name = rajasekarv
 [branch "B1"]
 	metaData = {appId:42013827-723d-49f3-a2c0-6628cc050633,serverId:1,streamId:Work,parentBranchName:master,userId:1}
+[branch "B2"]
+	metaData = {appId:1721d373-ffce-4f3c-888e-495d8dad74f3,serverId:1,streamId:Work,parentBranchName:master,userId:1}
