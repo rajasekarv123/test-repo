@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[branch "master"]
+	metaData = {appId:5308da08-0f73-404a-88b0-04170e9b57f2,serverId:1,streamId:4fb35a2d-e318-47a8-86ea-1940f5d8c2c6,parentBranchName:null,userId:1}
+[user]
+	email = admin@senseops.com
+	name = rajasekarv
+[branch "B1"]
+	metaData = {appId:42013827-723d-49f3-a2c0-6628cc050633,serverId:1,streamId:Work,parentBranchName:master,userId:1}
+[branch "B2"]
+	metaData = {appId:1721d373-ffce-4f3c-888e-495d8dad74f3,serverId:1,streamId:Work,parentBranchName:master,userId:1}
