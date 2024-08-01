@@ -10,3 +10,5 @@
 [user]
 	email = rajasekarv@gain-insights.com
 	name = rajasekarv
+[branch "B123"]
+	metaData = {appId:20426735-792f-4944-96ce-0614a0918453,serverId:2,streamId:Personal,parentBranchName:master,userId:1}
