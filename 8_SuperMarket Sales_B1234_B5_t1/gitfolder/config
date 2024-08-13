@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[branch "master"]
+	metaData = {appId:59785878-8df8-47ab-ade7-5824b771aec7,serverId:2,streamId:6662ddf90f53337274106b3d,parentBranchName:null,userId:1}
+[user]
+	email = rajasekarv@gain-insights.com
+	name = rajasekarv
